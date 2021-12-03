@@ -1,0 +1,45 @@
+header, section{
+    margin-top: 30px;
+}
+
+header nav{
+    width: 70%;
+}
+
+header nav::after{
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: #202020;
+    margin-top: 20px;
+}
+
+header nav ul li:nth-child(1){
+    width: 35%;
+}
+header nav ul li:nth-child(2){
+    width: 20%;
+}
+header nav ul li:nth-child(3){
+    width: 20%;
+}
+
+header nav ul li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 9px 8px;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #202020;
+}
+
+header nav ul li a h1{
+    font-size: 1.1rem;
+}
+
+header nav ul li a img{
+    width: 25px;
+    margin-right: 10px;
+}
+
