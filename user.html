@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronic Repairs</title>
+    <link rel="stylesheet" href="css/config_geral.css">
+    <link rel="stylesheet" href="css/styles_user.css">
+    <link rel="icon" href="imgs/tool-box.svg">
+
+    <!-- <?php
+
+        include("config.php");
+
+        /* Checar se ADM  */
+
+        //Se for, vai pra tela userAdmin.php
+        //Se não, vai pra tela user.php
+
+        //Quando fizer login tem que atualizar a variável de último acesso no banco de dados
+
+
+
+    ?>
+
+    <?php
+    
+        include("config.php");
+        $consulta = $banco->query("SELECT * FROM TB_SERVICOS JOIN TB_USUARIOS ON USU_CODIGO = SER_USU_CODIGO JOIN TB_TIPOS_DE_SERVICOS  ON SER_TIP_CODIGO = TIP_CODIGO JOIN TB_STATUS_DE_SERVICO ON SER_STA_CODIGO = STA_CODIGO");
+        
+    ?> -->
+
+</head>
+<body>
+
+    <!-- HEARDER USER NORMAL -->
+    <header>
+        <div class="container">
+            <nav>
+                <ul class="box space-around">
+                    <li><a href="#"><h1>Electronic Repairs</h1></a></li>
+                    <li><a href="#"><img src="imgs/add.svg">Contatar</a></li>
+                    <li><a href="#"><img src="imgs/user.svg">User</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section>
+        <div class="container">
+            <table>
+                <!-- <thead>
+                    <tr>
+                        <th>Nome do Cliente</th>
+                        <th>Início</th>
+                        <th>Conclusão</th>
+                        <th>Serviço</th>
+                        <th>Descrição</th>
+                        <th>Valor (R$)</th>
+                        <th>Status</th>  
+                    </tr>   
+                </thead> -->
+
+                <tbody>
+                <!-- <?php while($resultado = $consulta->fetch_assoc()){ ?>
+                    <tr>    
+                        <td><?php echo $resultado['usu_nome']; ?></td>
+                        <td><?php echo $resultado['ser_datainicio']; ?></td>
+                        <td><?php echo $resultado['ser_dataconcluida']; ?></td>
+                        <td><?php echo $resultado['tip_tipo'] ?></td>
+                        <td><?php echo $resultado['ser_descricao']; ?></td>
+                        <td><?php echo $resultado['ser_valor']; ?></td>
+                        <td><?php echo $resultado['sta_status'] ?></td>
+                    </tr>
+                <?php } ?> -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+</body>
+</html>
